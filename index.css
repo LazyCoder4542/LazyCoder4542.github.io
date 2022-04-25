@@ -1,0 +1,347 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+body {
+    height: fit-content;
+    background: hsl(218, 28%, 13%);
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-family: Open Sans;
+}
+nav {
+    font-weight: 700;
+    font-family: 'Raleway';
+}
+#header {
+    padding: 4% 4% 4% 4%;
+    background: hsl(217, 28%, 15%);
+    height: 1204px;
+    z-index: 1;
+}
+#header > img {
+    display: inline-block;
+    animation: slide 1s linear 1s 1 normal forwards;
+    position: relative;
+    left: -250px;
+}
+@keyframes slide {
+    0% {left: -250px;}
+    30% {left: -120px;}
+    60% {left: 30px;}
+    75% {left: -10px}
+    100% {left: 0px}
+}
+.menu {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400, 700;
+    font-family: 'Raleway';
+    position: relative;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    float: right;
+    top: 15px;
+}
+.menu > div {
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    cursor: pointer;
+    transition-property: border-bottom-color, font-weight;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu > div:hover {
+    border-bottom-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.menu > div > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.bg-curvy {
+    background: url("bg-curvy-desktop.png");
+    width: 100%;
+    height: 449px;
+    top: 870px;
+    z-index: 2;
+    position: absolute;
+}
+.content {
+    position: absolute;
+    z-index: 3;
+    margin: auto;
+    top: 200px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+.layer_1 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.intro {
+    margin: 5px;
+    margin-bottom: 100px;
+}
+.intro > nav {
+    font-size: 42px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 65px;
+}
+.intro > p {
+    font-size: 17px;
+    max-width: 530px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+.get_started {
+    margin: 20px auto 20px auto;
+    width: 280px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 75px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+.get_started:hover {
+    background: -webkit-linear-gradient(left, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+.features {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    padding-top: 70px;
+    width: fit-content;
+    gap: 100px 150px;
+}
+.features img {
+    height: 88px;
+    padding: auto;
+}
+.features > div {
+    height: auto;
+    width: auto;
+}
+.features > div > nav {
+    font-family: 'Raleway';
+    font-weight: bold;
+    word-spacing: normal;
+    font-size: 20px;
+    margin: 20px auto 10px auto;
+}
+.features > div > p {
+    max-width: 380px;
+}
+.features > div:first-child > p {
+    max-width: 350px;
+    margin: auto;
+}
+.stay {
+    margin: auto;
+    padding: 150px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.stay > div {
+    margin: auto;
+    margin-left: 40px;
+    text-align: left;
+}
+.stay > div > nav {
+    font-size: 40px;
+    max-width: 400px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.stay > div > p {
+    max-width: 480px;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+.stay > div > div {
+    padding: auto;
+    padding-bottom: 5px;
+    color: hsl(176, 68%, 64%);
+    border-bottom: hsl(176, 68%, 64%) 1px solid;
+    width: fit-content;
+    cursor: pointer;
+    transition-property: color border-bottom-color;
+    transition-duration: 1s;
+}
+/*.stay > div > div > img , */.stay > div > div> i {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+.stay > div > div:hover {
+    color: hsl(0, 0%, 100%);
+    border-bottom-color: hsl(0, 0%, 100%);
+}
+.layer_2 {
+    border: transparent 1px solid;
+    text-align: left;
+    width: fit-content;
+    margin: auto;
+}
+.layer_2 > img {
+    position: absolute;
+    z-index: 4
+}
+.layer_2 > .container {
+    position: relative;
+    z-index: 5;
+    margin: auto;
+    margin: 36px 7px auto 7px;
+    margin-left: 7px;
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+.persons {
+    background: hsl(219, 30%, 18%);
+    border-radius: 5px;
+    padding: 50px 20px 0px 20px;
+    font-weight: lighter;
+}
+.persons > p {
+    max-width: 285px;
+    line-height: 21px;
+}
+.persons > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: fit-content;
+}
+.persons > div > img {
+    height: 25px;
+    border-radius: 50%;
+}
+.persons > div > div {
+    font-size: 10px;
+    width: fit-content;
+    float: right;
+    padding-left: 10px;
+}
+.persons > div > div > nav {
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+.sign_up {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 220px;
+    background: hsl(217, 28%, 15%);
+    border-radius: 10px;
+    box-shadow: #131313 3px 3px 10px;
+    margin-top: 200px;
+    text-align: center;
+    padding: 40px;
+}
+.sign_up > nav {
+    padding: 20px 0px 10px 0px;
+    font-size: 33px;
+}
+.sign_up > p {
+    padding: 10px;
+    max-width: 620px;
+    margin: auto;
+}
+.sign_up > div {
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+input {
+    font-family: 'open sans';
+    padding: 15px 30px 15px;
+    border-radius: 75px;
+    border-style: none;
+    width: 400px;
+}
+.get_started_for_free {
+    margin-left: 30px;
+    width: 200px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 75px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    float: right;
+}
+.get_started_for_free:hover {
+    background: -webkit-linear-gradient(left, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+.footer {
+    padding: 250px 0px 100px;
+    margin-top: 360px;;
+    background: hsl(216, 53%, 9%);
+    height: fit-content;
+}
+.fcontent {
+    margin: auto;
+    width: fit-content;
+}
+.fcontent > img {
+    margin-bottom: 30px;
+}
+.address {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 80px;
+}
+.address > div {
+    width: fit-content;
+
+}
+.address > div > nav {
+    font-weight: unset;
+    font-family: unset;
+    width: fit-content;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.address > div > nav > img {
+    vertical-align: middle;
+}
+.address > div > nav > p {
+    float: right;
+    margin-left: 20px;
+}
+.first > nav > p {
+    max-width: 300px;
+    line-height: normal;
+}
+.second > nav {
+    font-size: 12px;
+}
+.third > nav , .fourth > nav {
+    font-size: 16px;
+    transition-property: font-weight;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: pointer;
+}
+.third > nav:hover , .fourth > nav:hover {
+    font-weight: bold;
+}
+.icon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
