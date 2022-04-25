@@ -102,7 +102,9 @@
             <nav>Get early access today</nav>
             <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             <div>
-                <input placeholder="email@example.com" type="email"/><div class="get_started_for_free" id="get_started_for_free">Get Started For Free</div>
+                <input placeholder="email@example.com" type="email" id="email" />
+                <div class="get_started_for_free" id="get_started_for_free" onclick="validate()">Get Started For Free</div>
+                <p id="error">Please enter a valid email address</p>
             </div>
         </div>
         <div class="footer">
@@ -137,9 +139,9 @@
                         <nav>Privacy</nav>
                     </div>
                     <div class="icons">
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="instagram"><i class="fa-brands fa-instagram"></i></div>
                     </div>
                 </div>
             </div>
