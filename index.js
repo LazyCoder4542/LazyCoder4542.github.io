@@ -1,1 +1,1 @@
-indow.alert("Welcome to Group 127 's Project Page. Hope you enjoy!");
+window.alert("Welcome to Group 127 's Project Page. Hope you enjoy!");
