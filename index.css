@@ -216,6 +216,7 @@ nav {
     border-radius: 5px;
     padding: 50px 20px 0px 20px;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 .persons > p {
     max-width: 285px;
