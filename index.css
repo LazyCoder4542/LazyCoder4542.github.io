@@ -359,10 +359,207 @@ input {
     width: 20px;
     border-radius: 50%;
     padding: 5px;
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.icons > div:hover {
+    border: hsl(176, 68%, 64%) 1px solid;
+    color: hsl(176, 68%, 64%);
 }
 .icons > div > i {
     color: inherit;
     left: 50%;
     position: relative;
     transform: translateX(-50%);
+}
+@media (max-width: 1024px) {
+    .address {
+        column-gap: 40px;
+    }
+    .layer_2 > .container {
+        column-gap: 10px;
+    }
+    .persons{
+        padding: 20px 10px 0px 10px;
+    }
+    .sign_up {
+        padding: 20px;
+        width: 600px;
+    }
+    input {
+        width: 300px;
+    }
+    .get_started_for_free {
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+}
+@media (max-width: 1000px) {
+    .address {
+        grid-template-columns: auto auto auto;
+    }
+    .stay {
+        display: block;
+    }
+    .stay > div {
+        margin: auto;
+        text-align: left;
+        width: fit-content;
+    }
+}
+@media (max-width: 768px) {
+    .bg-curvy {
+        top: 850px;
+    }
+    .features {
+        gap: 50px 50px;
+    }
+    .features > div > p {
+        max-width: 280px;
+    }
+    .intro > img , .stay > img{
+        width: 600px;
+    }
+
+}
+@media (max-width: 670px) {
+    body {
+        font-size: 20px;
+    }
+    .features {
+        display: block;
+    }
+    .features > div {
+        margin-top: 50px;
+    }
+    .features > div > p {
+        width: fit-content;
+        margin: auto;
+    }
+    .intro > img, .stay > img {
+        width: 450px;
+    }
+    .layer_2 > .container {
+        display: block;
+    }
+    .persons {
+        padding: 50px 20px 0px 20px;
+        margin-block: 30px;
+    }
+    .sign_up {
+        width: fit-content;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .sign_up > nav {
+        padding: 30px 0px 5px 0px;
+        font-size: 28px;
+    }
+    .sign_up > p {
+        padding: 8px;
+        max-width: 500px;
+    }
+    .sign_up > div {
+        margin-top: 10px;
+    }
+    input {
+        padding: 10px 30px 10px;
+        border-radius: 40px;
+        width: 200px;
+    }
+    .get_started_for_free {
+        font-size: 12px;
+        margin-left: 10px;
+        width: 150px;
+        padding-block: 10px; 
+        border-radius: 40px;
+    }
+    .menu {
+        font-size: 20px;
+    }
+    .address {
+        display: block;
+    }
+    .fcontent > img {
+        padding-left: 30px;
+    }
+    .address > div {
+        margin-block: 40px;
+    }
+    .icons {
+        width: fit-content;
+        margin: auto;
+        margin-top: 60px;
+    }
+    .sign_up > nav {
+        font-size: 20px;
+    }
+    .sign_up > p {
+        font-size: 15px;
+        max-width: 350px;
+    }
+}
+@media (max-width: 520px) {
+    .intro > img, .stay > img {
+        width: 350px;
+    }
+    .sign_up {
+        height: 300px;
+    }
+    .get_started_for_free {
+        width: 250px;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        font-size: 15px;
+    }
+    #header {
+        height: 400px;
+    }
+    .menu > div {
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .content {
+        top: 100px;
+    }
+    .intro > img, .stay > img {
+        width: 310px;
+    }
+    .intro > nav {
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 350px;
+    }
+    .intro > p {
+        font-size: 15px;
+    }
+    .bg-curvy {
+        background: url(bg-curvy-mobile.png);
+        height: 141px;
+        top: 300px;
+    }
+    #header > img {
+        width: 80px;
+        margin-top: 15px;
+    }
+    .features {
+        padding-top: 5px;
+        padding: 5px;
+    }
+    .sign_up {
+        height: 300px;
+    }
+    .get_started_for_free {
+        width: 250px;
+        float: none;
+        margin: auto;
+        margin-top: 10px;
+    }
 }
